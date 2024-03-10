@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --normal-btn-bg: #d9534f;
+  --normal-btn-hover: #c9302c;
+  --rank-btn-bg: #2563eb;
+  --card-shadow: rgba(0, 0, 0, 0.16);
+  --table-header: #769cee;
+  --table-color: #a5bae9;
+  --table-row-highlighted: #c5d0e8;
+  --warning-bg: #ffe4b5;
+  --warning-border: #ffa07a;
+}

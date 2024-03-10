@@ -1,0 +1,26 @@
+.page {
+  margin: 2rem auto;
+}
+.gridlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: 400px;
+  grid-gap: 2rem;
+  justify-content: center;
+  place-items: center;
+}
+
+.btn {
+  background-color: var(--normal-btn-bg);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  letter-spacing: 2px;
+  margin: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--normal-btn-hover);
+}

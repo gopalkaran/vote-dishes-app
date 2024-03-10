@@ -1,0 +1,34 @@
+table {
+  width: 100%;
+  background: var(--table-color);
+  color: black;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+th {
+  background: var(--table-header);
+  color: white;
+}
+
+tr {
+  border-bottom: 1px solid white;
+}
+
+.highlightedRow {
+  background-color: var(--table-row-highlighted);
+  color: black;
+  border: 1px solid white;
+}

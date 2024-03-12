@@ -22,3 +22,5 @@ URL to fetch dishes json: https://raw.githubusercontent.com/syook/react-dishpoll
 </sub>
 
 Tab2: Show the dishes in the descending order of the points received from the polling. The logged in user should also be able to see his selections in this list so that he knows where his selected dishes stand in the rankings.
+
+### Get username and password from src > userdb > users.json and try logging in. You can vote max three dishes as we have total 3 ranks. On polllist tab we can see the ranking of dishes in terms of their received points from the polling. and we can see user selection within the pollist.

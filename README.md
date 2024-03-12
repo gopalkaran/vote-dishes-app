@@ -1,5 +1,5 @@
 # react-dishpoll
-##Problem Statement
+## Problem Statement
 Make a small react app for ranking dishes. Multiple users should be able to login into the app and vote for their favourite dishes and see the results of the poll.
 
 ## Screens and functionalities needed:
@@ -12,11 +12,13 @@ Tab 1: Fetch the list of dishes using an API and display the results for the use
 
 URL to fetch dishes json: https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json
 
-Sample dish object
-{
+<sub> Sample dish object
+ {
     "id": 1,
     "dishName": "Lasagne",
     "description": "Breaded fried chicken with waffles, and a side of maple syrup.",
     "image": "https://loremflickr.com/300/300/food"
-}
+ }
+</sub>
+
 Tab2: Show the dishes in the descending order of the points received from the polling. The logged in user should also be able to see his selections in this list so that he knows where his selected dishes stand in the rankings.

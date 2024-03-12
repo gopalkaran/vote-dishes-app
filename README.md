@@ -1,28 +1,24 @@
-# Getting Started with DishPoll App
+# react-dishpoll
+## Problem Statement
+Make a small react app for ranking dishes. Multiple users should be able to login into the app and vote for their favourite dishes and see the results of the poll.
 
-I have used localstorage as storage to support my app. and list of users I have stored inside users.json file. So only person from the json file can login inside the app others wont be able to login.
+## Screens and functionalities needed:
 
-## Login Component
+Login Screen: A user should be able to login into the app using a username and password. Since there is no backend to query you can use a static list of users. Refer to users.json for the static list of users to use
 
-In the first page, we will have to put username and password which is present in the users.json then after login we will go inside the app means dashboard page.
+## Once logged in the main app should have 2 tabs (or equivalent).
 
-## Dashboard & DishList Component
+Tab 1: Fetch the list of dishes using an API and display the results for the user to vote. Each user then should be able to make a selection of 3 dishes from the poll that has been created. Each selection is given points based on the rank (Rank 1 gets 30 points, Rank 2 gets 20, Rank 3 gets 10). Save the user’s selections for displaying it to him on the next screen for poll results. A user should be able to edit his choices anytime even after submission i.e. if Dish 1 was Rank 1, the user can change it to no Rank or Rank 2, if there is another dish with the same rank the other dish will lose its rank
 
-Here we will render all the list of dishes in a gridlist. when we will click on a particular dish from the list we will go into the individual dish page. 
+URL to fetch dishes json: https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json
 
-## Dish Component
+<sub> Sample dish object
+ {
+    "id": 1,
+    "dishName": "Lasagne",
+    "description": "Breaded fried chicken with waffles, and a side of maple syrup.",
+    "image": "https://loremflickr.com/300/300/food"
+ }
+</sub>
 
-Here we will see individual dish and there is two buttons below the dish image and name. one button is for like and another for dislike. I have not added any alert for showing dish is liked or disliked but "like" will keep a record in the dishlist that who has liked this particular dish and "dislike" will remove the person from the list for a particular dish item. Also in this component I am maintaining votecount for individual dish and also for individual user. voteCount for individual dish will hold how many people like this dish. and voteCount for individual user will hold how many dishes liked by the an user.
-
-## Poll List
-
-In this Component I have calculated who has come first , second and third in terms of votecount and then sorted them based on their voteCount and then I have given them points based on their rank and finally displayed them in descending them based on their voteCount that means the dish which got highest vote or like, will be on the top and the second will be secondand so on.
-
-## Logout
-
-When we will click this, it will delete loggeduser details from the localstorage and will take us to login page.
-
-## PrivateRoute
-
-This will not let a person go to the dashboard if the user is not signed in.
-
+Tab2: Show the dishes in the descending order of the points received from the polling. The logged in user should also be able to see his selections in this list so that he knows where his selected dishes stand in the rankings.
